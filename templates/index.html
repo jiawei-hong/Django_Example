@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django</title>
+</head>
+
+<body>
+    {% for item in post_instance %}
+    <ul>
+        <li> 標題 : {{ item.title }}</li>
+        <li> 標語 : {{ item.slug }}</li>
+        <li> 日期 : {{ item.pub_date }}</li>
+    </ul>
+    {% endfor %}
+
+    {{ time }}
+</body>
+
+</html>
